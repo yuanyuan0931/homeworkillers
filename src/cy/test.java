@@ -20,7 +20,7 @@ public class test {
 			int num1 = (int)(Math.random()*(100-1)+1);
 			int num2 = (int)(Math.random()*(100-1)+1);
 			if(judgeEquation(num1, num2)) {
-				System.out.println("第"+count+"题");
+				System.out.println("第"+count+"题");	
 				System.out.print(num1 + operator + num2 +"=");
 				int res = sc.nextInt();
 				judgeResult(num1, num2, operator, res);
@@ -83,4 +83,5 @@ public class test {
 			return false;
 		}
 	}
+	
 }
