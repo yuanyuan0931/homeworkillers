@@ -29,8 +29,9 @@ public class view extends JFrame{
 		//生成组件
 		JLabel jl1 = new JLabel("请计算：");
 		JLabel jl2 = new JLabel(equationExe.getEquation());
-		JLabel jl3 = new JLabel("*");
-		JLabel jl4 = new JLabel("100");
+//		JLabel jl3 = new JLabel("*");
+//		JLabel jl4 = new JLabel("100");
+		JLabel jl5 = new JLabel("");
 		
 		JTextField jt = new JTextField();
 		
@@ -45,7 +46,8 @@ public class view extends JFrame{
 		c.add(jl2);
 		
 		//添加输入框
-		jt.setBounds(90, 90, 50, 20);
+		jt.setBounds(90, 90, 50, 25);
+		jt.setFont(new Font("黑体",Font.PLAIN,20));
 		c.add(jt);
 			
 		//添加确认按钮,绑定事件，定义分数
@@ -57,10 +59,16 @@ public class view extends JFrame{
 				int res = Integer.valueOf(jt.getText());
 				if(res == equationExe.res1) {
 					System.out.println("√");
+					jl5.setText("√");
 				}
 				else {
 					System.out.println("×");
+					jl5.setText("×");
 				}
+				jl5.setFont(new Font("黑体",Font.PLAIN,20));
+				jl5.setBounds(150, 90, 25, 25);
+				c.add(jl5);
+				jl5.setVisible(true);
 			}
 		});
 		
@@ -81,14 +89,15 @@ public class view extends JFrame{
 
 	public static void main(String[] args) {
 		new view();
+
 	}
 	
-//	public static boolean Judge() {
-//		int res = Integer.valueOf(view.jt.getText());
-//		if(res == equationExe.res1) {
-//			getScore();
-//		}
-//	}
+	//	public static boolean Judge() {
+	//		int res = Integer.valueOf(view.jt.getText());
+	//		if(res == equationExe.res1) {
+	//			getScore();
+	//		}
+	//	}
 	
 	
 

@@ -46,14 +46,14 @@ public class equationExe {
 		}
 		
 		return result;
-//		if(res == result) {
-//			System.out.println("√");
-//			score  ++;
-//			return true;
-//		}
-//		else {
-//			System.out.println("×");
-//			return false;
-//		}
+	//		if(res == result) {
+	//			System.out.println("√");
+	//			score  ++;
+	//			return true;
+	//		}
+	//		else {
+	//			System.out.println("×");
+	//			return false;
+	//		}
 	}
 }

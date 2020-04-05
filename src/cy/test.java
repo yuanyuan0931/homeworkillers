@@ -8,8 +8,8 @@ public class test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		char[] operator = new char[5];
-//		operator[] = {'+', '-', '*', '/'};
+	//		char[] operator = new char[5];
+	//		operator[] = {'+', '-', '*', '/'};
 
 		int count = 1;
 		Scanner sc = new Scanner(System.in);
